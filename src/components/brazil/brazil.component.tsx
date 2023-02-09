@@ -9,10 +9,10 @@ export const Brazil = memo<BrazilProps>(() => {
       xmlns='http://www.w3.org/2000/svg'
       width='612.51611'
       height='639.04297'
-      viewBox='-74.008595 5.275696 -34.789914 -33.743888'
+      viewBox='0 0 612.51611 639.04297'
     >
       {Array.from(StateInfoMap.keys()).map((key) => (
-        <State code={key} />
+        <State code={key} key={key} />
       ))}
     </svg>
   )

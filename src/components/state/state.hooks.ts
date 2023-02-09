@@ -194,8 +194,6 @@ export const StateInfoMap = Object.freeze(
   ])
 )
 
-console.log(StateInfoMap)
-
 export function useStateCode(key: BrazilianIso31662Code): IStateInfo {
   return StateInfoMap.get(key) ?? StateInfoMap.get('BR-DF')!
 }
