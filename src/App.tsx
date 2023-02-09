@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import './App.css'
 import { Brazil } from './components/brazil'
-import { SelectedState, SelectedStateContext } from './contexts/state'
+import { SelectedStateContext } from './contexts/state'
 import { BrazilianIso31662Code } from './components/state'
+import { StateDrawer } from './components/state-drawer'
 
 const App = () => {
   const [selectedState, setSelectedState] =
@@ -17,6 +17,7 @@ const App = () => {
         }}
       >
         <Brazil />
+        <StateDrawer />
       </SelectedStateContext.Provider>
     </div>
   )

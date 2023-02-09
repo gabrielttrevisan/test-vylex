@@ -13,6 +13,8 @@ export type BrazilianIso31662Code = `BR-${
 export interface IStateInfo {
   name: string
   path: string
+  latitude: number
+  longitude: number
 }
 
 export interface IHasBrazilianIso31662Code {

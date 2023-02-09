@@ -3,7 +3,7 @@ import { BrazilianIso31662Code } from '../components/state'
 
 export interface SelectedState {
   code: BrazilianIso31662Code | null
-  select: (code: BrazilianIso31662Code) => void
+  select: (code: BrazilianIso31662Code | null) => void
 }
 
 export const SelectedStateContext = createContext<SelectedState | null>(null)
